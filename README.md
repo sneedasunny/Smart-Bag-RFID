@@ -1,42 +1,59 @@
-# SmartBag – RFID-Based Smart Bag
+# 🎒 SmartBag – RFID-Based Smart Bag
 
-## Project Overview
+An embedded systems project built using the **STM32F103C8T6 microcontroller** and RFID technology to identify essential items inside a school bag.
 
-SmartBag is an embedded systems project developed using the STM32F103C8T6 microcontroller. It uses RFID technology to identify and track essential items inside a school bag.
+## 📌 Project Overview
 
-The system helps users check whether all required books or items have been packed before leaving.
+SmartBag is designed to help students check whether their required books and other items are packed before leaving. The system uses RFID tags to identify items and provides feedback through an OLED display and buzzer.
 
-## Hardware Components
+## 🛠️ Hardware Components
 
 - STM32F103C8T6 (Blue Pill)
 - MFRC522 RFID Reader
 - RFID Tags
 - SSD1306 OLED Display
 - Buzzer
-- Connecting wires
+- Connecting Wires
 
-## Features
+## ✨ Features
 
 - RFID-based item identification
-- Tracks scanned and missing items
-- Displays information on an OLED screen
+- Scanning of tagged books and items
+- Display of scanning information on an OLED screen
 - Buzzer indication for missing items
 
-## Working Principle
+## ⚙️ Working Principle
 
 1. Each book or item is assigned an RFID tag.
 2. The RFID reader scans the tags.
-3. The STM32 microcontroller identifies the scanned items.
+3. The STM32 microcontroller processes the scanned information.
 4. The OLED display shows the scanning status.
 5. The system indicates missing items using a buzzer.
 
-## Software and Tools
+## 💻 Software and Technologies
 
 - Embedded C
 - STM32CubeIDE
 - STM32CubeMX
+- STM32 HAL Libraries
 
-## Microcontroller
+## 🧠 Microcontroller
 
-STM32F103C8T6 – Blue Pill
+**STM32F103C8T6 – Blue Pill**
 
+## 📁 Project Structure
+
+- `Core/` – Main application source and header files
+- `Drivers/` – STM32 device and peripheral libraries
+- `SmartBag.ioc` – STM32CubeMX configuration file
+- `STM32F103C8TX_FLASH.ld` – Linker script
+
+## 🚀 Future Improvements
+
+- Add support for more items and RFID tags.
+- Improve the user interface.
+- Enhance item tracking and notifications.
+
+## 👩‍💻 Project
+
+Developed as an embedded systems project using STM32 and RFID technology.
